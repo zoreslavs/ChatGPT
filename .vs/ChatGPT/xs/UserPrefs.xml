@@ -1,0 +1,15 @@
+﻿<Properties StartupConfiguration="{F16FBE8B-0371-F926-4DC1-10935DCED067}|">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/GhatGPT/Scripts/DiscussionManager.cs">
+    <Files>
+      <File FileName="Assets/GhatGPT/Scripts/DiscussionBubble.cs" Line="1" Column="22" />
+      <File FileName="Assets/GhatGPT/Scripts/DiscussionManager.cs" Line="1" Column="34" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="dde4e194-5715-4439-b4f6-11e8785b09f0" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
