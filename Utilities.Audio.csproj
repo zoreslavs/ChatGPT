@@ -56,20 +56,20 @@
     <Analyzer Include="/Applications/Visual Studio.app/Contents/MonoBundle/Addins/MonoDevelop.Unity/Analyzers/Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Library/PackageCache/com.utilities.audio@2.2.3/Runtime/AbstractStreamRecordingBehaviour.cs" />
     <Compile Include="Library/PackageCache/com.utilities.audio@2.2.3/Runtime/PCMRecordingBehaviour.cs" />
     <Compile Include="Library/PackageCache/com.utilities.audio@2.2.3/Runtime/ClipData.cs" />
-    <Compile Include="Library/PackageCache/com.utilities.audio@2.2.3/Runtime/IEncoder.cs" />
     <Compile Include="Library/PackageCache/com.utilities.audio@2.2.3/Runtime/StreamAudioSource.cs" />
     <Compile Include="Library/PackageCache/com.utilities.audio@2.2.3/Runtime/AudioClipExtensions.cs" />
     <Compile Include="Library/PackageCache/com.utilities.audio@2.2.3/Runtime/AbstractRecordingBehaviour.cs" />
+    <Compile Include="Library/PackageCache/com.utilities.audio@2.2.3/Runtime/PCMFormatSize.cs" />
+    <Compile Include="Library/PackageCache/com.utilities.audio@2.2.3/Runtime/UnitySampleProvider.cs" />
+    <Compile Include="Library/PackageCache/com.utilities.audio@2.2.3/Runtime/RecordingManager.cs" />
+    <Compile Include="Library/PackageCache/com.utilities.audio@2.2.3/Runtime/AbstractStreamRecordingBehaviour.cs" />
+    <Compile Include="Library/PackageCache/com.utilities.audio@2.2.3/Runtime/IEncoder.cs" />
     <Compile Include="Library/PackageCache/com.utilities.audio@2.2.3/Runtime/PCMStreamRecordingBehaviour.cs" />
     <Compile Include="Library/PackageCache/com.utilities.audio@2.2.3/Runtime/AssemblyInfo.cs" />
     <Compile Include="Library/PackageCache/com.utilities.audio@2.2.3/Runtime/Microphone.cs" />
     <Compile Include="Library/PackageCache/com.utilities.audio@2.2.3/Runtime/PCMEncoder.cs" />
-    <Compile Include="Library/PackageCache/com.utilities.audio@2.2.3/Runtime/PCMFormatSize.cs" />
-    <Compile Include="Library/PackageCache/com.utilities.audio@2.2.3/Runtime/UnitySampleProvider.cs" />
-    <Compile Include="Library/PackageCache/com.utilities.audio@2.2.3/Runtime/RecordingManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Library/PackageCache/com.utilities.audio@2.2.3/Runtime/Utilities.Audio.asmdef" />

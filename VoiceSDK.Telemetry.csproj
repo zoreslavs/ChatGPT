@@ -56,11 +56,11 @@
     <Analyzer Include="/Applications/Visual Studio.app/Contents/MonoBundle/Addins/MonoDevelop.Unity/Analyzers/Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets/Oculus/Voice/Features/Telemetry/Scripts/Editor/AssemblyInfo.cs" />
     <Compile Include="Assets/Oculus/Voice/Features/Telemetry/Scripts/Editor/TelemetryConsentManager.cs" />
     <Compile Include="Assets/Oculus/Voice/Features/Telemetry/Scripts/Editor/Telemetry.cs" />
     <Compile Include="Assets/Oculus/Voice/Features/Telemetry/Scripts/Editor/TelemetryAnnotationKey.cs" />
     <Compile Include="Assets/Oculus/Voice/Features/Telemetry/Scripts/Editor/TelemetryLogLevel.cs" />
+    <Compile Include="Assets/Oculus/Voice/Features/Telemetry/Scripts/Editor/AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/Oculus/Voice/Features/Telemetry/Scripts/Editor/Telemetry.Editor.asmdef" />
@@ -763,13 +763,13 @@
       <Project>{468211C7-936D-87DD-2173-7F61F6530ADF}</Project>
       <Name>AssistantCoreSDKRuntime</Name>
     </ProjectReference>
-    <ProjectReference Include="UnityEngine.TestRunner.csproj">
-      <Project>{AF4D67D8-A6D0-A2A7-46D0-C07D24A0EC40}</Project>
-      <Name>UnityEngine.TestRunner</Name>
-    </ProjectReference>
     <ProjectReference Include="UnityEditor.TestRunner.csproj">
       <Project>{7C687051-2764-A2BB-12E8-67FA829E25BE}</Project>
       <Name>UnityEditor.TestRunner</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.TestRunner.csproj">
+      <Project>{AF4D67D8-A6D0-A2A7-46D0-C07D24A0EC40}</Project>
+      <Name>UnityEngine.TestRunner</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

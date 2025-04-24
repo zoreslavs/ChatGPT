@@ -59,8 +59,8 @@
     <Compile Include="Library/PackageCache/com.utilities.extensions@1.2.0/Runtime/Extensions/TransformExtensions.cs" />
     <Compile Include="Library/PackageCache/com.utilities.extensions@1.2.0/Runtime/Extensions/UnityObjectExtensions.cs" />
     <Compile Include="Library/PackageCache/com.utilities.extensions@1.2.0/Runtime/SerializedDictionary.cs" />
-    <Compile Include="Library/PackageCache/com.utilities.extensions@1.2.0/Runtime/AssemblyInfo.cs" />
     <Compile Include="Library/PackageCache/com.utilities.extensions@1.2.0/Runtime/Extensions/GameObjectExtensions.cs" />
+    <Compile Include="Library/PackageCache/com.utilities.extensions@1.2.0/Runtime/AssemblyInfo.cs" />
     <Compile Include="Library/PackageCache/com.utilities.extensions@1.2.0/Runtime/Extensions/ComponentExtensions.cs" />
   </ItemGroup>
   <ItemGroup>

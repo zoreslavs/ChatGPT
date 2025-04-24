@@ -56,15 +56,15 @@
     <Analyzer Include="/Applications/Visual Studio.app/Contents/MonoBundle/Addins/MonoDevelop.Unity/Analyzers/Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Features/TTS/Scripts/Editor/TTSSpeakerInspector.cs" />
+    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Features/TTS/Scripts/Editor/Preload/TTSPreloadSettings.cs" />
+    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Features/TTS/Scripts/Editor/Preload/TTSPreloadUtility.cs" />
+    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Features/TTS/Scripts/Editor/Voices/TTSWitVoiceUtility.cs" />
     <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Features/TTS/Scripts/Editor/Preload/TTSPreloadSettingsInspector.cs" />
     <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Features/TTS/Scripts/Editor/Voices/TTSWitVoiceSettingsDrawer.cs" />
-    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Features/TTS/Scripts/Editor/TTSEditorUtilities.cs" />
-    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Features/TTS/Scripts/Editor/TTSSpeakerInspector.cs" />
-    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Features/TTS/Scripts/Editor/TTSServiceInspector.cs" />
     <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Features/TTS/Scripts/Editor/Voices/TTSWitVoiceData.cs" />
-    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Features/TTS/Scripts/Editor/Preload/TTSPreloadUtility.cs" />
-    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Features/TTS/Scripts/Editor/Preload/TTSPreloadSettings.cs" />
-    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Features/TTS/Scripts/Editor/Voices/TTSWitVoiceUtility.cs" />
+    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Features/TTS/Scripts/Editor/TTSEditorUtilities.cs" />
+    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Features/TTS/Scripts/Editor/TTSServiceInspector.cs" />
     <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Features/TTS/Scripts/Editor/TTSWitInspector.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -780,13 +780,13 @@
       <Project>{C791A9F0-04D9-B440-5731-A1E19E828F42}</Project>
       <Name>Meta.WitAI.Lib.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="UnityEngine.TestRunner.csproj">
-      <Project>{AF4D67D8-A6D0-A2A7-46D0-C07D24A0EC40}</Project>
-      <Name>UnityEngine.TestRunner</Name>
-    </ProjectReference>
     <ProjectReference Include="UnityEditor.TestRunner.csproj">
       <Project>{7C687051-2764-A2BB-12E8-67FA829E25BE}</Project>
       <Name>UnityEditor.TestRunner</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.TestRunner.csproj">
+      <Project>{AF4D67D8-A6D0-A2A7-46D0-C07D24A0EC40}</Project>
+      <Name>UnityEngine.TestRunner</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

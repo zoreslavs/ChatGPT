@@ -56,14 +56,14 @@
     <Analyzer Include="/Applications/Visual Studio.app/Contents/MonoBundle/Addins/MonoDevelop.Unity/Analyzers/Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Library/PackageCache/com.utilities.async@2.2.2/Runtime/Async/Awaiters.cs" />
     <Compile Include="Library/PackageCache/com.utilities.async@2.2.2/Runtime/Async/AwaitYieldInstructions/BackgroundThread.cs" />
-    <Compile Include="Library/PackageCache/com.utilities.async@2.2.2/Runtime/Async/AwaitYieldInstructions/UnityMainThread.cs" />
     <Compile Include="Library/PackageCache/com.utilities.async@2.2.2/Runtime/AssemblyInfo.cs" />
     <Compile Include="Library/PackageCache/com.utilities.async@2.2.2/Runtime/Async/Internal/SyncContextUtility.cs" />
+    <Compile Include="Library/PackageCache/com.utilities.async@2.2.2/Runtime/Async/CoroutineWrapper.cs" />
+    <Compile Include="Library/PackageCache/com.utilities.async@2.2.2/Runtime/Async/Awaiters.cs" />
+    <Compile Include="Library/PackageCache/com.utilities.async@2.2.2/Runtime/Async/AwaitYieldInstructions/UnityMainThread.cs" />
     <Compile Include="Library/PackageCache/com.utilities.async@2.2.2/Runtime/Async/ActionExtensions.cs" />
     <Compile Include="Library/PackageCache/com.utilities.async@2.2.2/Runtime/Async/AwaiterExtensions.cs" />
-    <Compile Include="Library/PackageCache/com.utilities.async@2.2.2/Runtime/Async/CoroutineWrapper.cs" />
     <Compile Include="Library/PackageCache/com.utilities.async@2.2.2/Runtime/Async/SimpleCoroutineAwaiter.cs" />
   </ItemGroup>
   <ItemGroup>

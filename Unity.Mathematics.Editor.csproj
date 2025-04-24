@@ -56,10 +56,10 @@
     <Analyzer Include="/Applications/Visual Studio.app/Contents/MonoBundle/Addins/MonoDevelop.Unity/Analyzers/Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Library/PackageCache/com.unity.mathematics@1.2.6/Unity.Mathematics.Editor/MatrixDrawer.cs" />
-    <Compile Include="Library/PackageCache/com.unity.mathematics@1.2.6/Unity.Mathematics.Editor/QuaternionDrawer.cs" />
     <Compile Include="Library/PackageCache/com.unity.mathematics@1.2.6/Unity.Mathematics.Editor/PostNormalizedVectorDrawer.cs" />
+    <Compile Include="Library/PackageCache/com.unity.mathematics@1.2.6/Unity.Mathematics.Editor/QuaternionDrawer.cs" />
     <Compile Include="Library/PackageCache/com.unity.mathematics@1.2.6/Unity.Mathematics.Editor/PrimitiveVectorDrawer.cs" />
+    <Compile Include="Library/PackageCache/com.unity.mathematics@1.2.6/Unity.Mathematics.Editor/MatrixDrawer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Library/PackageCache/com.unity.mathematics@1.2.6/Unity.Mathematics.Editor/Unity.Mathematics.Editor.asmdef" />
@@ -758,13 +758,13 @@
       <Project>{2EBDD50F-F228-C565-34B9-0EF7AC35E9EF}</Project>
       <Name>Unity.Mathematics</Name>
     </ProjectReference>
-    <ProjectReference Include="UnityEngine.TestRunner.csproj">
-      <Project>{AF4D67D8-A6D0-A2A7-46D0-C07D24A0EC40}</Project>
-      <Name>UnityEngine.TestRunner</Name>
-    </ProjectReference>
     <ProjectReference Include="UnityEditor.TestRunner.csproj">
       <Project>{7C687051-2764-A2BB-12E8-67FA829E25BE}</Project>
       <Name>UnityEditor.TestRunner</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.TestRunner.csproj">
+      <Project>{AF4D67D8-A6D0-A2A7-46D0-C07D24A0EC40}</Project>
+      <Name>UnityEngine.TestRunner</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

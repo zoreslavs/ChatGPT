@@ -56,44 +56,44 @@
     <Analyzer Include="/Applications/Visual Studio.app/Contents/MonoBundle/Addins/MonoDevelop.Unity/Analyzers/Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Lib/Conduit/Editor/Training/WitTrainer.cs" />
-    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Lib/Conduit/Editor/IWitHttp.cs" />
-    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Lib/Conduit/Editor/IParameterValidator.cs" />
-    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Lib/Conduit/Editor/WitHttp.cs" />
-    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Lib/Conduit/Editor/Training/StepRunner.cs" />
-    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Lib/Conduit/Editor/Training/EnumCodeWrapper.cs" />
     <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Lib/Conduit/Editor/IConduitAssembly.cs" />
-    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Lib/Conduit/Editor/AssemblyMiner.cs" />
-    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Lib/Conduit/Editor/ManifestGenerator.cs" />
-    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Lib/Conduit/Editor/Training/EnsureWitIntentsStep.cs" />
-    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Lib/Conduit/Editor/Training/IProcessStep.cs" />
     <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Lib/Conduit/Editor/Data/WitTrainingStatus.cs" />
-    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Lib/Conduit/Editor/AssemblyWalker.cs" />
-    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Lib/Conduit/Editor/Training/TrainUtterances.cs" />
-    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Lib/Conduit/Editor/Training/EnumSynchronizer.cs" />
-    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Lib/Conduit/Editor/Training/Payload.cs" />
-    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Lib/Conduit/Editor/IFileIo.cs" />
     <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Lib/Conduit/Editor/Training/SyncWitEntitiesStep.cs" />
-    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Lib/Conduit/Editor/Data/WitOutgoingEntity.cs" />
-    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Lib/Conduit/Editor/FileIo.cs" />
-    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Lib/Conduit/Editor/ConduitStatistics.cs" />
+    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Lib/Conduit/Editor/Data/WitEntity.cs" />
+    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Lib/Conduit/Editor/SourceCodeMapper.cs" />
+    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Lib/Conduit/Editor/Training/EntitiesDelta.cs" />
+    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Lib/Conduit/Editor/IFileIo.cs" />
     <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Lib/Conduit/Editor/Data/WitTrainingUtterance.cs" />
+    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Lib/Conduit/Editor/Data/WitRole.cs" />
+    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Lib/Conduit/Editor/IAssemblyMiner.cs" />
+    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Lib/Conduit/Editor/Training/WitTrainer.cs" />
+    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Lib/Conduit/Editor/Training/EnsureWitIntentsStep.cs" />
+    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Lib/Conduit/Editor/IAssemblyWalker.cs" />
+    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Lib/Conduit/Editor/Data/WitIncomingEntity.cs" />
+    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Lib/Conduit/Editor/IWitHttp.cs" />
+    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Lib/Conduit/Editor/AssemblyMiner.cs" />
+    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Lib/Conduit/Editor/Training/IProcessStep.cs" />
+    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Lib/Conduit/Editor/Training/TrainUtterances.cs" />
+    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Lib/Conduit/Editor/Training/Payload.cs" />
+    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Lib/Conduit/Editor/FileIo.cs" />
+    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Lib/Conduit/Editor/WitHttp.cs" />
+    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Lib/Conduit/Editor/Training/EnumCodeWrapper.cs" />
+    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Lib/Conduit/Editor/AssemblyWalker.cs" />
+    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Lib/Conduit/Editor/AssemblyInfo.cs" />
+    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Lib/Conduit/Editor/Data/WitTrainingEntity.cs" />
+    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Lib/Conduit/Editor/IParameterValidator.cs" />
+    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Lib/Conduit/Editor/Training/StepRunner.cs" />
+    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Lib/Conduit/Editor/Training/KeywordsDelta.cs" />
+    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Lib/Conduit/Editor/ManifestGenerator.cs" />
+    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Lib/Conduit/Editor/Training/EnumSynchronizer.cs" />
+    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Lib/Conduit/Editor/Data/WitOutgoingEntity.cs" />
+    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Lib/Conduit/Editor/ConduitStatistics.cs" />
     <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Lib/Conduit/Editor/PersistenceLayer.cs" />
     <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Lib/Conduit/Editor/ConduitAssembly.cs" />
-    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Lib/Conduit/Editor/IAssemblyWalker.cs" />
-    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Lib/Conduit/Editor/AssemblyInfo.cs" />
     <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Lib/Conduit/Editor/IParameterFilter.cs" />
-    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Lib/Conduit/Editor/Data/WitRole.cs" />
     <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Lib/Conduit/Editor/Training/ObtainIdmData.cs" />
     <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Lib/Conduit/Editor/IPersistenceLayer.cs" />
-    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Lib/Conduit/Editor/Data/WitEntity.cs" />
-    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Lib/Conduit/Editor/Data/WitTrainingEntity.cs" />
-    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Lib/Conduit/Editor/IAssemblyMiner.cs" />
-    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Lib/Conduit/Editor/Training/EntitiesDelta.cs" />
     <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Lib/Conduit/Editor/Training/ProcessStep.cs" />
-    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Lib/Conduit/Editor/Data/WitIncomingEntity.cs" />
-    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Lib/Conduit/Editor/SourceCodeMapper.cs" />
-    <Compile Include="Assets/Oculus/Voice/Lib/Wit.ai/Lib/Conduit/Editor/Training/KeywordsDelta.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/Oculus/Voice/Lib/Wit.ai/Lib/Conduit/Editor/Facebook.Wit.Conduit.Editor.asmdef" />
@@ -800,13 +800,13 @@
       <Project>{C791A9F0-04D9-B440-5731-A1E19E828F42}</Project>
       <Name>Meta.WitAI.Lib.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="UnityEngine.TestRunner.csproj">
-      <Project>{AF4D67D8-A6D0-A2A7-46D0-C07D24A0EC40}</Project>
-      <Name>UnityEngine.TestRunner</Name>
-    </ProjectReference>
     <ProjectReference Include="UnityEditor.TestRunner.csproj">
       <Project>{7C687051-2764-A2BB-12E8-67FA829E25BE}</Project>
       <Name>UnityEditor.TestRunner</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.TestRunner.csproj">
+      <Project>{AF4D67D8-A6D0-A2A7-46D0-C07D24A0EC40}</Project>
+      <Name>UnityEngine.TestRunner</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -56,18 +56,18 @@
     <Analyzer Include="/Applications/Visual Studio.app/Contents/MonoBundle/Addins/MonoDevelop.Unity/Analyzers/Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Library/PackageCache/com.utilities.extensions@1.2.0/Editor/Extensions/ScriptableObjectExtensions.cs" />
-    <Compile Include="Library/PackageCache/com.utilities.extensions@1.2.0/Editor/Extensions/SerializedPropertyExtensions.cs" />
-    <Compile Include="Library/PackageCache/com.utilities.extensions@1.2.0/Editor/Extensions/ProcessResult.cs" />
     <Compile Include="Library/PackageCache/com.utilities.extensions@1.2.0/Editor/Extensions/ScriptIconExtensions.cs" />
     <Compile Include="Library/PackageCache/com.utilities.extensions@1.2.0/Editor/Utilities/RegenerateGuids.cs" />
     <Compile Include="Library/PackageCache/com.utilities.extensions@1.2.0/Editor/Extensions/EditorGUILayoutExtensions.cs" />
     <Compile Include="Library/PackageCache/com.utilities.extensions@1.2.0/Editor/Extensions/ProcessExtensions.cs" />
+    <Compile Include="Library/PackageCache/com.utilities.extensions@1.2.0/Editor/Extensions/AbstractEditorDashboard.cs" />
+    <Compile Include="Library/PackageCache/com.utilities.extensions@1.2.0/Editor/Extensions/ScriptableObjectExtensions.cs" />
+    <Compile Include="Library/PackageCache/com.utilities.extensions@1.2.0/Editor/Extensions/SerializedPropertyExtensions.cs" />
+    <Compile Include="Library/PackageCache/com.utilities.extensions@1.2.0/Editor/Extensions/ProcessResult.cs" />
     <Compile Include="Library/PackageCache/com.utilities.extensions@1.2.0/Editor/PropertyDrawers/SerializedDictionaryObject.cs" />
     <Compile Include="Library/PackageCache/com.utilities.extensions@1.2.0/Editor/AssemblyInfo.cs" />
     <Compile Include="Library/PackageCache/com.utilities.extensions@1.2.0/Editor/PropertyDrawers/SerializedDictionaryPropertyDrawer.cs" />
     <Compile Include="Library/PackageCache/com.utilities.extensions@1.2.0/Editor/Extensions/ObjectExtensions.cs" />
-    <Compile Include="Library/PackageCache/com.utilities.extensions@1.2.0/Editor/Extensions/AbstractEditorDashboard.cs" />
     <Compile Include="Library/PackageCache/com.utilities.extensions@1.2.0/Editor/Extensions/SerializedObjectExtensions.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -767,13 +767,13 @@
       <Project>{2D997D1D-08C3-14AD-C59E-BB80376EF2A5}</Project>
       <Name>Utilities.Extensions</Name>
     </ProjectReference>
-    <ProjectReference Include="UnityEngine.TestRunner.csproj">
-      <Project>{AF4D67D8-A6D0-A2A7-46D0-C07D24A0EC40}</Project>
-      <Name>UnityEngine.TestRunner</Name>
-    </ProjectReference>
     <ProjectReference Include="UnityEditor.TestRunner.csproj">
       <Project>{7C687051-2764-A2BB-12E8-67FA829E25BE}</Project>
       <Name>UnityEditor.TestRunner</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.TestRunner.csproj">
+      <Project>{AF4D67D8-A6D0-A2A7-46D0-C07D24A0EC40}</Project>
+      <Name>UnityEngine.TestRunner</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

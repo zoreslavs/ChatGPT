@@ -60,27 +60,27 @@
     <Compile Include="Library/PackageCache/com.utilities.rest@3.3.3/Runtime/ServerSentEvent.cs" />
     <Compile Include="Library/PackageCache/com.utilities.rest@3.3.3/Runtime/Interfaces/IAuthentication.cs" />
     <Compile Include="Library/PackageCache/com.utilities.rest@3.3.3/Runtime/AssemblyInfo.cs" />
-    <Compile Include="Library/PackageCache/com.utilities.rest@3.3.3/Runtime/Interfaces/IAuthInfo.cs" />
-    <Compile Include="Library/PackageCache/com.utilities.rest@3.3.3/Runtime/BaseClient.cs" />
     <Compile Include="Library/PackageCache/com.utilities.rest@3.3.3/Runtime/Interfaces/IDownloadCache.cs" />
     <Compile Include="Library/PackageCache/com.utilities.rest@3.3.3/Runtime/DiskDownloadCache.cs" />
     <Compile Include="Library/PackageCache/com.utilities.rest@3.3.3/Runtime/Progress.cs" />
-    <Compile Include="Library/PackageCache/com.utilities.rest@3.3.3/Runtime/Interfaces/ISettings.cs" />
     <Compile Include="Library/PackageCache/com.utilities.rest@3.3.3/Runtime/Interfaces/IServerSentEvent.cs" />
-    <Compile Include="Library/PackageCache/com.utilities.rest@3.3.3/Runtime/Extensions/EmptyToNullStringValueProvider.cs" />
     <Compile Include="Library/PackageCache/com.utilities.rest@3.3.3/Runtime/AbstractAuthentication.cs" />
     <Compile Include="Library/PackageCache/com.utilities.rest@3.3.3/Runtime/Rest.cs" />
     <Compile Include="Library/PackageCache/com.utilities.rest@3.3.3/Runtime/RestException.cs" />
     <Compile Include="Library/PackageCache/com.utilities.rest@3.3.3/Runtime/Response.cs" />
-    <Compile Include="Library/PackageCache/com.utilities.rest@3.3.3/Runtime/RestParameters.cs" />
-    <Compile Include="Library/PackageCache/com.utilities.rest@3.3.3/Runtime/ServerSentEventKind.cs" />
     <Compile Include="Library/PackageCache/com.utilities.rest@3.3.3/Runtime/Extensions/NameValueCollectionExtensions.cs" />
-    <Compile Include="Library/PackageCache/com.utilities.rest@3.3.3/Runtime/NoOpDownloadCache.cs" />
-    <Compile Include="Library/PackageCache/com.utilities.rest@3.3.3/Runtime/Extensions/EmptyToNullStringContractResolver.cs" />
     <Compile Include="Library/PackageCache/com.utilities.rest@3.3.3/Runtime/DownloadHandlerCallback.cs" />
     <Compile Include="Library/PackageCache/com.utilities.rest@3.3.3/Runtime/Interfaces/IConfiguration.cs" />
     <Compile Include="Library/PackageCache/com.utilities.rest@3.3.3/Runtime/Interfaces/ISettingsInfo.cs" />
     <Compile Include="Library/PackageCache/com.utilities.rest@3.3.3/Runtime/Extensions/EnumExtensions.cs" />
+    <Compile Include="Library/PackageCache/com.utilities.rest@3.3.3/Runtime/Interfaces/IAuthInfo.cs" />
+    <Compile Include="Library/PackageCache/com.utilities.rest@3.3.3/Runtime/BaseClient.cs" />
+    <Compile Include="Library/PackageCache/com.utilities.rest@3.3.3/Runtime/Interfaces/ISettings.cs" />
+    <Compile Include="Library/PackageCache/com.utilities.rest@3.3.3/Runtime/Extensions/EmptyToNullStringValueProvider.cs" />
+    <Compile Include="Library/PackageCache/com.utilities.rest@3.3.3/Runtime/RestParameters.cs" />
+    <Compile Include="Library/PackageCache/com.utilities.rest@3.3.3/Runtime/ServerSentEventKind.cs" />
+    <Compile Include="Library/PackageCache/com.utilities.rest@3.3.3/Runtime/NoOpDownloadCache.cs" />
+    <Compile Include="Library/PackageCache/com.utilities.rest@3.3.3/Runtime/Extensions/EmptyToNullStringContractResolver.cs" />
     <Compile Include="Library/PackageCache/com.utilities.rest@3.3.3/Runtime/BaseEndPoint.cs" />
   </ItemGroup>
   <ItemGroup>

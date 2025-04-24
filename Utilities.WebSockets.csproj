@@ -59,11 +59,11 @@
     <Compile Include="Library/PackageCache/com.utilities.websockets@1.0.3/Runtime/State.cs" />
     <Compile Include="Library/PackageCache/com.utilities.websockets@1.0.3/Runtime/AssemblyInfo.cs" />
     <Compile Include="Library/PackageCache/com.utilities.websockets@1.0.3/Runtime/WebSocket_WebGL.cs" />
-    <Compile Include="Library/PackageCache/com.utilities.websockets@1.0.3/Runtime/CloseStatusCode.cs" />
     <Compile Include="Library/PackageCache/com.utilities.websockets@1.0.3/Runtime/DataFrame.cs" />
     <Compile Include="Library/PackageCache/com.utilities.websockets@1.0.3/Runtime/OpCode.cs" />
-    <Compile Include="Library/PackageCache/com.utilities.websockets@1.0.3/Runtime/IWebSocket.cs" />
     <Compile Include="Library/PackageCache/com.utilities.websockets@1.0.3/Runtime/WebSocket.cs" />
+    <Compile Include="Library/PackageCache/com.utilities.websockets@1.0.3/Runtime/CloseStatusCode.cs" />
+    <Compile Include="Library/PackageCache/com.utilities.websockets@1.0.3/Runtime/IWebSocket.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Library/PackageCache/com.utilities.websockets@1.0.3/Runtime/Utilities.Websockets.asmdef" />

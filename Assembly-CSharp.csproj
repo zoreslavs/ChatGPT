@@ -56,10 +56,12 @@
     <Analyzer Include="/Applications/Visual Studio.app/Contents/MonoBundle/Addins/MonoDevelop.Unity/Analyzers/Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets/GhatGPT/Scripts/DiscussionBubble.cs" />
     <Compile Include="Assets/GhatGPT/Scripts/ContentAutoScroll.cs" />
-    <Compile Include="Assets/TutorialInfo/Scripts/Readme.cs" />
     <Compile Include="Assets/GhatGPT/Scripts/DiscussionManager.cs" />
+    <Compile Include="Assets/GhatGPT/Scripts/DiscussionBubble.cs" />
+    <Compile Include="Assets/_Heathen Engineering/Samples/UX Examples/Flat Icons [Free]/ToggleSetAnimatorBoolean.cs" />
+    <Compile Include="Assets/TutorialInfo/Scripts/Readme.cs" />
+    <Compile Include="Assets/GhatGPT/Scripts/TTSBridge.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
@@ -79,6 +81,7 @@
     <None Include="Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc" />
     <None Include="Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt" />
     <None Include="Assets/Oculus/Voice/Features/Telemetry/Plugins/SDKTelemetry.dll" />
+    <None Include="Assets/_Heathen Engineering/Documentation/UX/Flat Icons [Free]/Read Me.txt" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF Overlay.shader" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader" />
@@ -726,12 +729,6 @@
     <Reference Include="Unity.RenderPipelines.Universal.Shaders">
       <HintPath>Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.RenderPipelines.Universal.Runtime">
-      <HintPath>Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="PPv2URPConverters">
-      <HintPath>Library/ScriptAssemblies/PPv2URPConverters.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
@@ -741,17 +738,23 @@
     <Reference Include="UnityEngine.UI">
       <HintPath>Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.RenderPipelines.Core.Runtime">
-      <HintPath>Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.ShaderGraph.Editor">
       <HintPath>Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.RenderPipelines.Universal.Editor">
-      <HintPath>Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
       <HintPath>Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.Runtime">
+      <HintPath>Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="PPv2URPConverters">
+      <HintPath>Library/ScriptAssemblies/PPv2URPConverters.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.Runtime">
+      <HintPath>Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.Editor">
+      <HintPath>Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
       <HintPath>Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
@@ -761,25 +764,25 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Unity.VisualScripting.Flow.Editor.csproj">
-      <Project>{1EFAAB5D-6EE6-E078-CAE1-790764A64961}</Project>
-      <Name>Unity.VisualScripting.Flow.Editor</Name>
+    <ProjectReference Include="Meta.Voice.Samples.LightTraits.csproj">
+      <Project>{DF6E8CCC-031A-7C78-A2F7-E22EAB55D1FE}</Project>
+      <Name>Meta.Voice.Samples.LightTraits</Name>
+    </ProjectReference>
+    <ProjectReference Include="Meta.VoiceSDK.Mic.WebGL.csproj">
+      <Project>{10775D4B-B07A-CB3E-7EA4-2736CD3ED576}</Project>
+      <Name>Meta.VoiceSDK.Mic.WebGL</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VSCode.Editor.csproj">
       <Project>{97E10584-B975-F3D9-181C-0D681A58D87A}</Project>
       <Name>Unity.VSCode.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="Utilities.Rest.csproj">
-      <Project>{4919544B-8720-8287-4457-3AB4FAD2A676}</Project>
-      <Name>Utilities.Rest</Name>
-    </ProjectReference>
     <ProjectReference Include="Utilities.Async.Editor.csproj">
       <Project>{47A62BA8-E757-E34D-9407-DF9D02500827}</Project>
       <Name>Utilities.Async.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="Utilities.Rest.Editor.csproj">
-      <Project>{E10B0CF6-C4D4-05D5-6F47-F8BEFB16CB07}</Project>
-      <Name>Utilities.Rest.Editor</Name>
+    <ProjectReference Include="AssistantCoreSDKEditor.csproj">
+      <Project>{B87700FA-F3B1-99F6-91DD-1C335D7CEEB2}</Project>
+      <Name>AssistantCoreSDKEditor</Name>
     </ProjectReference>
     <ProjectReference Include="OpenAI.Samples.Chat.csproj">
       <Project>{9D2322DF-BA07-49B7-5F1F-38B007988B25}</Project>
@@ -789,9 +792,133 @@
       <Project>{2836999F-0996-6502-170E-E208F014E0A2}</Project>
       <Name>Unity.TextMeshPro.Editor</Name>
     </ProjectReference>
+    <ProjectReference Include="Meta.VoiceSDK.Mic.Common.csproj">
+      <Project>{0B89390C-43F6-109D-125D-97F191A94F82}</Project>
+      <Name>Meta.VoiceSDK.Mic.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.VisualScripting.State.Editor.csproj">
+      <Project>{B43CC852-3107-DE83-E6E9-B50D151083C4}</Project>
+      <Name>Unity.VisualScripting.State.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="AssistantCoreSDKRuntime.csproj">
+      <Project>{468211C7-936D-87DD-2173-7F61F6530ADF}</Project>
+      <Name>AssistantCoreSDKRuntime</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Searcher.Editor.csproj">
+      <Project>{7E489A60-6103-89F7-081A-35F5A85E05BA}</Project>
+      <Name>Unity.Searcher.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Meta.WitAi.Conduit.csproj">
+      <Project>{FFF2E16D-7961-9F08-6B60-76FDF93F4BFF}</Project>
+      <Name>Meta.WitAi.Conduit</Name>
+    </ProjectReference>
+    <ProjectReference Include="Utilities.Encoding.Wav.Editor.csproj">
+      <Project>{AC930857-F84E-5782-51B8-1756587F560A}</Project>
+      <Name>Utilities.Encoding.Wav.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Utilities.Async.Addressables.csproj">
+      <Project>{3CB80F12-98B8-DE86-2E41-09B8C8DD2C1D}</Project>
+      <Name>Utilities.Async.Addressables</Name>
+    </ProjectReference>
+    <ProjectReference Include="Utilities.Async.csproj">
+      <Project>{86BF2CC2-3898-1E33-2DEE-39F9DB19419E}</Project>
+      <Name>Utilities.Async</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.VisualScripting.SettingsProvider.Editor.csproj">
+      <Project>{4F71C762-FED0-772D-946B-17684565CB6C}</Project>
+      <Name>Unity.VisualScripting.SettingsProvider.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Rider.Editor.csproj">
+      <Project>{5D9CCA0B-894A-368D-FB5C-D59A31B3E3DF}</Project>
+      <Name>Unity.Rider.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Meta.Voice.Hub.Editor.csproj">
+      <Project>{EDB34C18-7D3D-9150-8B71-91EC971B1B30}</Project>
+      <Name>Meta.Voice.Hub.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Meta.Voice.VSDKHub.Editor.csproj">
+      <Project>{6FF47D63-2D37-CEA5-6169-EBAAC5534868}</Project>
+      <Name>Meta.Voice.VSDKHub.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Utilities.WebSockets.csproj">
+      <Project>{2312B69C-60B6-EF7B-97BB-A0B34C61718E}</Project>
+      <Name>Utilities.WebSockets</Name>
+    </ProjectReference>
+    <ProjectReference Include="Meta.WitAi.csproj">
+      <Project>{F137469D-79A9-C427-6803-C1E203DE4BD3}</Project>
+      <Name>Meta.WitAi</Name>
+    </ProjectReference>
+    <ProjectReference Include="Facebook.Wit.Dictation.Editor.csproj">
+      <Project>{C1F96B83-0D32-14E5-EA1B-6B9338A134D1}</Project>
+      <Name>Facebook.Wit.Dictation.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.EditorCoroutines.Editor.csproj">
+      <Project>{1377A783-9412-F5C5-312B-521BAEA76F34}</Project>
+      <Name>Unity.EditorCoroutines.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="OpenAI.csproj">
+      <Project>{04006E74-72DE-3638-EC23-ED9AF67C717E}</Project>
+      <Name>OpenAI</Name>
+    </ProjectReference>
+    <ProjectReference Include="Facebook.Wit.Dictation.csproj">
+      <Project>{926B5527-F9CE-CE07-34E6-60DECE1642E0}</Project>
+      <Name>Facebook.Wit.Dictation</Name>
+    </ProjectReference>
+    <ProjectReference Include="Meta.Voice.Samples.TTSVoices.csproj">
+      <Project>{F586D751-8941-4C89-4C06-BB639862FC8A}</Project>
+      <Name>Meta.Voice.Samples.TTSVoices</Name>
+    </ProjectReference>
+    <ProjectReference Include="Meta.WitAI.Lib.Editor.csproj">
+      <Project>{C791A9F0-04D9-B440-5731-A1E19E828F42}</Project>
+      <Name>Meta.WitAI.Lib.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Mathematics.Editor.csproj">
+      <Project>{A50A7EC0-AD51-A101-3E6E-B09CE76B41AB}</Project>
+      <Name>Unity.Mathematics.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Utilities.WebSockets.Editor.csproj">
+      <Project>{F879F1FF-9D07-1EEE-4966-1AED27780838}</Project>
+      <Name>Utilities.WebSockets.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Meta.WitAi.TTS.csproj">
+      <Project>{ADB58D47-6749-B180-CC77-5C3A2284C371}</Project>
+      <Name>Meta.WitAi.TTS</Name>
+    </ProjectReference>
+    <ProjectReference Include="Meta.Voice.Samples.Chess.csproj">
+      <Project>{67AD67B5-77A7-171E-2120-0A8D4085D82B}</Project>
+      <Name>Meta.Voice.Samples.Chess</Name>
+    </ProjectReference>
+    <ProjectReference Include="Meta.WitAi.TTS.Editor.csproj">
+      <Project>{79B3AFFD-2311-3C39-F1EB-E357FFD636AE}</Project>
+      <Name>Meta.WitAi.TTS.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.VisualScripting.Flow.Editor.csproj">
+      <Project>{1EFAAB5D-6EE6-E078-CAE1-790764A64961}</Project>
+      <Name>Unity.VisualScripting.Flow.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Meta.Voice.Samples.ShapesConduit.csproj">
+      <Project>{F5032852-A962-D5A8-1023-952E35291922}</Project>
+      <Name>Meta.Voice.Samples.ShapesConduit</Name>
+    </ProjectReference>
+    <ProjectReference Include="Utilities.Rest.csproj">
+      <Project>{4919544B-8720-8287-4457-3AB4FAD2A676}</Project>
+      <Name>Utilities.Rest</Name>
+    </ProjectReference>
+    <ProjectReference Include="Utilities.Rest.Editor.csproj">
+      <Project>{E10B0CF6-C4D4-05D5-6F47-F8BEFB16CB07}</Project>
+      <Name>Utilities.Rest.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Meta.Voice.Samples.Dictation.csproj">
+      <Project>{AC11FE78-B73D-D2F3-CA0D-702CF120CB09}</Project>
+      <Name>Meta.Voice.Samples.Dictation</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.VisualStudio.Editor.csproj">
       <Project>{463C2B4D-05E8-CB32-3D2A-F9FF01F430D5}</Project>
       <Name>Unity.VisualStudio.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Meta.VoiceSDK.Mic.Other.csproj">
+      <Project>{3EEAD958-1703-E11C-E859-8EE07574A9FD}</Project>
+      <Name>Meta.VoiceSDK.Mic.Other</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Timeline.csproj">
       <Project>{1E6A4968-1644-3C7C-E3F8-C5703EFBD3A4}</Project>
@@ -805,37 +932,17 @@
       <Project>{98D6087D-60BF-4695-6CFA-1F0901E23BAC}</Project>
       <Name>Unity.TextMeshPro</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.VisualScripting.State.Editor.csproj">
-      <Project>{B43CC852-3107-DE83-E6E9-B50D151083C4}</Project>
-      <Name>Unity.VisualScripting.State.Editor</Name>
-    </ProjectReference>
     <ProjectReference Include="Unity.Burst.Editor.csproj">
       <Project>{36D61BAC-F8A5-2C8A-D19B-B8DC51B6B2C5}</Project>
       <Name>Unity.Burst.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Searcher.Editor.csproj">
-      <Project>{7E489A60-6103-89F7-081A-35F5A85E05BA}</Project>
-      <Name>Unity.Searcher.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Utilities.Async.csproj">
-      <Project>{86BF2CC2-3898-1E33-2DEE-39F9DB19419E}</Project>
-      <Name>Utilities.Async</Name>
-    </ProjectReference>
-    <ProjectReference Include="Utilities.Encoding.Wav.Editor.csproj">
-      <Project>{AC930857-F84E-5782-51B8-1756587F560A}</Project>
-      <Name>Utilities.Encoding.Wav.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Utilities.Audio.csproj">
       <Project>{B3E3237C-DDF6-E2AC-8B88-26EC4858633C}</Project>
       <Name>Utilities.Audio</Name>
     </ProjectReference>
-    <ProjectReference Include="Utilities.Async.Addressables.csproj">
-      <Project>{3CB80F12-98B8-DE86-2E41-09B8C8DD2C1D}</Project>
-      <Name>Utilities.Async.Addressables</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.VisualScripting.SettingsProvider.Editor.csproj">
-      <Project>{4F71C762-FED0-772D-946B-17684565CB6C}</Project>
-      <Name>Unity.VisualScripting.SettingsProvider.Editor</Name>
+    <ProjectReference Include="Utilities.Audio.Editor.csproj">
+      <Project>{0D3DF0E2-0694-F631-98D1-8E94C2558043}</Project>
+      <Name>Utilities.Audio.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VisualScripting.Flow.csproj">
       <Project>{EF1475D5-CFE5-9FD1-958C-3E19425419DB}</Project>
@@ -845,17 +952,9 @@
       <Project>{5714B1DE-D69A-A095-0FB9-4B38B5169DF7}</Project>
       <Name>Unity.PlasticSCM.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.Rider.Editor.csproj">
-      <Project>{5D9CCA0B-894A-368D-FB5C-D59A31B3E3DF}</Project>
-      <Name>Unity.Rider.Editor</Name>
-    </ProjectReference>
     <ProjectReference Include="Utilities.Extensions.Editor.csproj">
       <Project>{E275F7A4-F61F-CC16-B085-4DCED61ABFE1}</Project>
       <Name>Utilities.Extensions.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Utilities.WebSockets.csproj">
-      <Project>{2312B69C-60B6-EF7B-97BB-A0B34C61718E}</Project>
-      <Name>Utilities.WebSockets</Name>
     </ProjectReference>
     <ProjectReference Include="Utilities.Extensions.csproj">
       <Project>{2D997D1D-08C3-14AD-C59E-BB80376EF2A5}</Project>
@@ -865,17 +964,21 @@
       <Project>{48420243-8F4D-CE49-0F58-8C34BDC93E92}</Project>
       <Name>Unity.VisualScripting.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.EditorCoroutines.Editor.csproj">
-      <Project>{1377A783-9412-F5C5-312B-521BAEA76F34}</Project>
-      <Name>Unity.EditorCoroutines.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="OpenAI.csproj">
-      <Project>{04006E74-72DE-3638-EC23-ED9AF67C717E}</Project>
-      <Name>OpenAI</Name>
+    <ProjectReference Include="Meta.WitAi.Conduit.Editor.csproj">
+      <Project>{CC6197BC-5031-1F27-7221-32E3ECC7F1EA}</Project>
+      <Name>Meta.WitAi.Conduit.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Mathematics.csproj">
       <Project>{2EBDD50F-F228-C565-34B9-0EF7AC35E9EF}</Project>
       <Name>Unity.Mathematics</Name>
+    </ProjectReference>
+    <ProjectReference Include="Meta.Voice.Samples.LiveUnderstanding.csproj">
+      <Project>{F56AA02D-5392-390D-2273-3B78F1797CC3}</Project>
+      <Name>Meta.Voice.Samples.LiveUnderstanding</Name>
+    </ProjectReference>
+    <ProjectReference Include="Meta.Voice.Samples.Shapes.csproj">
+      <Project>{25392CA9-88A9-3420-E652-D0C706BD5BD3}</Project>
+      <Name>Meta.Voice.Samples.Shapes</Name>
     </ProjectReference>
     <ProjectReference Include="Utilities.Encoding.Wav.csproj">
       <Project>{24E93268-485D-DFAE-BC95-5DB22615E0C3}</Project>
@@ -885,77 +988,41 @@
       <Project>{B5B130C9-247E-2E91-B08C-B340F2F62B4E}</Project>
       <Name>OpenAI.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="Utilities.Audio.Editor.csproj">
-      <Project>{0D3DF0E2-0694-F631-98D1-8E94C2558043}</Project>
-      <Name>Utilities.Audio.Editor</Name>
-    </ProjectReference>
     <ProjectReference Include="Unity.Burst.csproj">
       <Project>{0B087CDF-BB76-FD3E-18CC-93A877B5E626}</Project>
       <Name>Unity.Burst</Name>
+    </ProjectReference>
+    <ProjectReference Include="Meta.WitAi.Editor.csproj">
+      <Project>{00081013-EE03-5ED1-AA22-C250B308A7FB}</Project>
+      <Name>Meta.WitAi.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="VoiceSDK.Editor.csproj">
+      <Project>{BE29FA24-6A4A-FBF7-3210-11493C4236DC}</Project>
+      <Name>VoiceSDK.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VisualScripting.Shared.Editor.csproj">
       <Project>{2DC22C0A-DEC2-1C59-AA6C-6E2368EA5539}</Project>
       <Name>Unity.VisualScripting.Shared.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.Timeline.Editor.csproj">
-      <Project>{76010DF3-E944-9A05-AE0C-143FF72066C9}</Project>
-      <Name>Unity.Timeline.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Mathematics.Editor.csproj">
-      <Project>{A50A7EC0-AD51-A101-3E6E-B09CE76B41AB}</Project>
-      <Name>Unity.Mathematics.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Utilities.WebSockets.Editor.csproj">
-      <Project>{F879F1FF-9D07-1EEE-4966-1AED27780838}</Project>
-      <Name>Utilities.WebSockets.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Utilities.Extensions.Addressables.csproj">
-      <Project>{D8DA6C40-321B-2D71-6CB1-6D67EF7B9E6C}</Project>
-      <Name>Utilities.Extensions.Addressables</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.VisualScripting.State.csproj">
-      <Project>{DFF44DF6-675B-24F3-F658-081C6484B0FB}</Project>
-      <Name>Unity.VisualScripting.State</Name>
-    </ProjectReference>
-    <ProjectReference Include="Meta.VoiceSDK.Mic.Common.csproj">
-      <Project>{0B89390C-43F6-109D-125D-97F191A94F82}</Project>
-      <Name>Meta.VoiceSDK.Mic.Common</Name>
-    </ProjectReference>
-    <ProjectReference Include="Meta.WitAi.Conduit.csproj">
-      <Project>{FFF2E16D-7961-9F08-6B60-76FDF93F4BFF}</Project>
-      <Name>Meta.WitAi.Conduit</Name>
-    </ProjectReference>
-    <ProjectReference Include="Meta.Voice.Hub.Editor.csproj">
-      <Project>{EDB34C18-7D3D-9150-8B71-91EC971B1B30}</Project>
-      <Name>Meta.Voice.Hub.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Meta.WitAi.csproj">
-      <Project>{F137469D-79A9-C427-6803-C1E203DE4BD3}</Project>
-      <Name>Meta.WitAi</Name>
-    </ProjectReference>
-    <ProjectReference Include="Meta.WitAi.TTS.csproj">
-      <Project>{ADB58D47-6749-B180-CC77-5C3A2284C371}</Project>
-      <Name>Meta.WitAi.TTS</Name>
-    </ProjectReference>
-    <ProjectReference Include="Meta.Voice.Samples.ShapesConduit.csproj">
-      <Project>{F5032852-A962-D5A8-1023-952E35291922}</Project>
-      <Name>Meta.Voice.Samples.ShapesConduit</Name>
-    </ProjectReference>
-    <ProjectReference Include="Meta.Voice.Samples.Dictation.csproj">
-      <Project>{AC11FE78-B73D-D2F3-CA0D-702CF120CB09}</Project>
-      <Name>Meta.Voice.Samples.Dictation</Name>
-    </ProjectReference>
-    <ProjectReference Include="Meta.Voice.Samples.Shapes.csproj">
-      <Project>{25392CA9-88A9-3420-E652-D0C706BD5BD3}</Project>
-      <Name>Meta.Voice.Samples.Shapes</Name>
+    <ProjectReference Include="VoiceSDK.Dictation.Editor.csproj">
+      <Project>{C96784BA-1A98-F9FD-2C2E-5727E70B758F}</Project>
+      <Name>VoiceSDK.Dictation.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="VoiceSDK.Dictation.Runtime.csproj">
       <Project>{60717256-B248-99F0-1518-1B1E4367352A}</Project>
       <Name>VoiceSDK.Dictation.Runtime</Name>
     </ProjectReference>
-    <ProjectReference Include="Meta.WitAI.Lib.Editor.csproj">
-      <Project>{C791A9F0-04D9-B440-5731-A1E19E828F42}</Project>
-      <Name>Meta.WitAI.Lib.Editor</Name>
+    <ProjectReference Include="Unity.Timeline.Editor.csproj">
+      <Project>{76010DF3-E944-9A05-AE0C-143FF72066C9}</Project>
+      <Name>Unity.Timeline.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Meta.WitAi.TTS.Samples.csproj">
+      <Project>{86EB2037-E17A-8D24-0D25-D8A4DA9BE6BB}</Project>
+      <Name>Meta.WitAi.TTS.Samples</Name>
+    </ProjectReference>
+    <ProjectReference Include="VoiceSDK.Runtime.csproj">
+      <Project>{17869EA5-4B85-95F5-B1B1-B22B15CD7F9E}</Project>
+      <Name>VoiceSDK.Runtime</Name>
     </ProjectReference>
     <ProjectReference Include="Meta.WitAi.Lib.csproj">
       <Project>{FCC7994C-B6DB-9A4E-9456-8EAA303A8A7B}</Project>
@@ -965,85 +1032,21 @@
       <Project>{23E5641E-8BAA-5346-2BD7-F2BD8F2EADF3}</Project>
       <Name>VoiceSDK.Telemetry</Name>
     </ProjectReference>
-    <ProjectReference Include="AssistantCoreSDKRuntime.csproj">
-      <Project>{468211C7-936D-87DD-2173-7F61F6530ADF}</Project>
-      <Name>AssistantCoreSDKRuntime</Name>
-    </ProjectReference>
-    <ProjectReference Include="VoiceSDK.Dictation.Editor.csproj">
-      <Project>{C96784BA-1A98-F9FD-2C2E-5727E70B758F}</Project>
-      <Name>VoiceSDK.Dictation.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Meta.VoiceSDK.Mic.Other.csproj">
-      <Project>{3EEAD958-1703-E11C-E859-8EE07574A9FD}</Project>
-      <Name>Meta.VoiceSDK.Mic.Other</Name>
-    </ProjectReference>
-    <ProjectReference Include="VoiceSDK.Editor.csproj">
-      <Project>{BE29FA24-6A4A-FBF7-3210-11493C4236DC}</Project>
-      <Name>VoiceSDK.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="VoiceSDK.Runtime.csproj">
-      <Project>{17869EA5-4B85-95F5-B1B1-B22B15CD7F9E}</Project>
-      <Name>VoiceSDK.Runtime</Name>
-    </ProjectReference>
-    <ProjectReference Include="AssistantCoreSDKEditor.csproj">
-      <Project>{B87700FA-F3B1-99F6-91DD-1C335D7CEEB2}</Project>
-      <Name>AssistantCoreSDKEditor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Meta.Voice.Samples.TTSVoices.csproj">
-      <Project>{F586D751-8941-4C89-4C06-BB639862FC8A}</Project>
-      <Name>Meta.Voice.Samples.TTSVoices</Name>
-    </ProjectReference>
-    <ProjectReference Include="Meta.WitAi.TTS.Editor.csproj">
-      <Project>{79B3AFFD-2311-3C39-F1EB-E357FFD636AE}</Project>
-      <Name>Meta.WitAi.TTS.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Meta.Voice.Samples.LightTraits.csproj">
-      <Project>{DF6E8CCC-031A-7C78-A2F7-E22EAB55D1FE}</Project>
-      <Name>Meta.Voice.Samples.LightTraits</Name>
-    </ProjectReference>
-    <ProjectReference Include="Facebook.Wit.Dictation.csproj">
-      <Project>{926B5527-F9CE-CE07-34E6-60DECE1642E0}</Project>
-      <Name>Facebook.Wit.Dictation</Name>
-    </ProjectReference>
-    <ProjectReference Include="Meta.Voice.Samples.Chess.csproj">
-      <Project>{67AD67B5-77A7-171E-2120-0A8D4085D82B}</Project>
-      <Name>Meta.Voice.Samples.Chess</Name>
-    </ProjectReference>
-    <ProjectReference Include="Meta.WitAi.Conduit.Editor.csproj">
-      <Project>{CC6197BC-5031-1F27-7221-32E3ECC7F1EA}</Project>
-      <Name>Meta.WitAi.Conduit.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Meta.Voice.Samples.LiveUnderstanding.csproj">
-      <Project>{F56AA02D-5392-390D-2273-3B78F1797CC3}</Project>
-      <Name>Meta.Voice.Samples.LiveUnderstanding</Name>
-    </ProjectReference>
-    <ProjectReference Include="Meta.WitAi.Editor.csproj">
-      <Project>{00081013-EE03-5ED1-AA22-C250B308A7FB}</Project>
-      <Name>Meta.WitAi.Editor</Name>
+    <ProjectReference Include="Meta.Voice.Hub.Runtime.csproj">
+      <Project>{6B16711C-B784-EE79-646A-988CFB7BBA83}</Project>
+      <Name>Meta.Voice.Hub.Runtime</Name>
     </ProjectReference>
     <ProjectReference Include="Meta.Voice.Samples.BuiltInTimer.csproj">
       <Project>{E77DE31F-34B6-A00E-D9DE-37FC99EF4DD9}</Project>
       <Name>Meta.Voice.Samples.BuiltInTimer</Name>
     </ProjectReference>
-    <ProjectReference Include="Meta.VoiceSDK.Mic.WebGL.csproj">
-      <Project>{10775D4B-B07A-CB3E-7EA4-2736CD3ED576}</Project>
-      <Name>Meta.VoiceSDK.Mic.WebGL</Name>
+    <ProjectReference Include="Utilities.Extensions.Addressables.csproj">
+      <Project>{D8DA6C40-321B-2D71-6CB1-6D67EF7B9E6C}</Project>
+      <Name>Utilities.Extensions.Addressables</Name>
     </ProjectReference>
-    <ProjectReference Include="Meta.Voice.VSDKHub.Editor.csproj">
-      <Project>{6FF47D63-2D37-CEA5-6169-EBAAC5534868}</Project>
-      <Name>Meta.Voice.VSDKHub.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Meta.WitAi.TTS.Samples.csproj">
-      <Project>{86EB2037-E17A-8D24-0D25-D8A4DA9BE6BB}</Project>
-      <Name>Meta.WitAi.TTS.Samples</Name>
-    </ProjectReference>
-    <ProjectReference Include="Facebook.Wit.Dictation.Editor.csproj">
-      <Project>{C1F96B83-0D32-14E5-EA1B-6B9338A134D1}</Project>
-      <Name>Facebook.Wit.Dictation.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Meta.Voice.Hub.Runtime.csproj">
-      <Project>{6B16711C-B784-EE79-646A-988CFB7BBA83}</Project>
-      <Name>Meta.Voice.Hub.Runtime</Name>
+    <ProjectReference Include="Unity.VisualScripting.State.csproj">
+      <Project>{DFF44DF6-675B-24F3-F658-081C6484B0FB}</Project>
+      <Name>Unity.VisualScripting.State</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

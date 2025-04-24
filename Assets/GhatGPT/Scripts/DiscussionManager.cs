@@ -15,6 +15,7 @@ public class DiscussionManager : MonoBehaviour
 
     [Header("Events:")]
     public static Action OnMessageReceived;
+    public static Action<string> OnAIMessageReceived;
 
     [Header("Authentication:")]
     [SerializeField] private string _apiKey;
@@ -32,7 +33,7 @@ public class DiscussionManager : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.KeypadEnter))
+        if (Input.GetKeyDown(KeyCode.Return))
         {
             AskButtonCallback();
         }
@@ -45,6 +46,7 @@ public class DiscussionManager : MonoBehaviour
         var response = await GetChatResponseAsync();
         if (response != null)
         {
+            OnAIMessageReceived?.Invoke(response.FirstChoice.ToString());
             AddMessage(Role.System, response.FirstChoice.ToString());
             CreateBubble(response.FirstChoice.ToString(), false);
         }
@@ -73,7 +75,7 @@ public class DiscussionManager : MonoBehaviour
 
     private void Initialize()
     {
-        AddMessage(Role.System, "You are a weather expert.");
+        AddMessage(Role.System, "You are an alcohol expert.");
     }
 
     private void CreateBubble(string message, bool isUserMessage)
