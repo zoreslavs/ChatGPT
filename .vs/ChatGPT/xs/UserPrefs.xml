@@ -1,18 +1,17 @@
 ﻿<Properties StartupConfiguration="{F16FBE8B-0371-F926-4DC1-10935DCED067}|">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/GhatGPT/Scripts/STTBridge.cs">
+    <Files>
+      <File FileName="Assets/GhatGPT/Scripts/DiscussionBubble.cs" />
+      <File FileName="Assets/GhatGPT/Scripts/DiscussionManager.cs" Line="9" Column="47" />
+      <File FileName="Assets/GhatGPT/Scripts/AskButtonManager.cs" Line="44" Column="60" />
+      <File FileName="Assets/GhatGPT/Scripts/STTBridge.cs" Line="68" Column="77" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="41486d1b-a3a2-43a3-ac9a-e581bbaba0e0" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/GhatGPT/Scripts/STTBridge.cs">
-    <Files>
-      <File FileName="Assets/GhatGPT/Scripts/DiscussionBubble.cs" Line="44" Column="57" />
-      <File FileName="Assets/GhatGPT/Scripts/DiscussionManager.cs" Line="13" Column="57" />
-      <File FileName="Assets/GhatGPT/Scripts/TTSBridge.cs" Line="27" Column="34" />
-      <File FileName="Assets/GhatGPT/Scripts/STTBridge.cs" Line="48" Column="45" />
-      <File FileName="Assets/Oculus/Voice/Scripts/Runtime/Service/AppVoiceExperience.cs" Line="71" Column="69" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="ab7324de-e13e-4ef8-a9d2-b2f6eb159572" />
 </Properties>
