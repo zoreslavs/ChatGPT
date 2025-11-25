@@ -18,11 +18,16 @@ namespace Meta.WitAi.Data
     public class AudioBuffer : MonoBehaviour
     {
         #region Singleton
+        private static bool _isQuitting;
+
         private static AudioBuffer _instance;
         public static AudioBuffer Instance
         {
             get
             {
+                if (_isQuitting)
+                    return null;
+
                 if (!_instance && Application.isPlaying)
                 {
                     _instance = FindObjectOfType<AudioBuffer>();
@@ -34,6 +39,17 @@ namespace Meta.WitAi.Data
                 }
                 return _instance;
             }
+        }
+
+        private void OnApplicationQuit()
+        {
+            _isQuitting = true;
+        }
+
+        private void OnDestroy()
+        {
+            if (_instance == this)
+                _instance = null;
         }
         #endregion
 

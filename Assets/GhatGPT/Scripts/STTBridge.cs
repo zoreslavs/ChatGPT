@@ -65,7 +65,7 @@ public class STTBridge : MonoBehaviour
 
     public void OnComplete(VoiceServiceRequest request)
     {
-        Debug.Log("VoiceEvent - OnComplete: " + request.ResponseData.Value);
+        Debug.Log("VoiceEvent - OnComplete: " + (request.ResponseData != null ? request.ResponseData.Value : "ResponseData is empty."));
     }
 
     public void OnTranscriptionChange(string text)
