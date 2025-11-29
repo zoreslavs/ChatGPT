@@ -1,2 +1,8 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Ignore shader files in language stats
+*.hlsl linguist-vendored
+*.cginc linguist-vendored
+*.shader linguist-vendored
+*.compute linguist-vendored
